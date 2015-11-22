@@ -10,3 +10,5 @@ RUN curl -sL "http://dl.bintray.com/sbt/native-packages/sbt/$SBT_VERSION/sbt-$SB
     echo -ne "- with sbt $SBT_VERSION\n" >> /root/.built
 
 WORKDIR /app
+
+ENTRYPOINT ["/usr/local/sbt/bin/sbt"]
